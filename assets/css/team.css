@@ -1,0 +1,133 @@
+/* Define the font face */
+@font-face {
+    font-family: 'Product Sans';
+    src: url('assets/fonts/Product Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+body {
+    font-family: 'Product Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Ensure text is readable on video */
+    background-color: #000; /* Fallback color if video fails to load */
+}
+
+video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire screen */
+    z-index: -1; /* Send the video behind all content */
+}
+
+
+
+header {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Align items vertically */
+    text-align: center;
+    padding: 5px;
+}
+
+.header-logo {
+    max-width: 150px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between logo and heading */
+  }
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    
+
+}
+
+main {
+    padding: 2rem;
+    
+
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 3px solid #007bff; /* Blue underline */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #003366; /* Dark blue */
+    font-size: 2rem;
+}
+/* Update for the team-container to display in a single row */
+.team-container {
+    display: flex;
+    justify-content: space-between; /* Space out the team members evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 1rem;
+}
+
+/* Update team-member to fit five in a row */
+.team-member {
+    background: linear-gradient(135deg, #f0faff, #e0eaff); /* Light blue gradient */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: calc(20% - 1rem); /* Adjust width for 5 items in a row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Reduce the width to make the frames smaller */
+}
+
+/* Optional: reduce the size of the images for a more compact look */
+.team-img {
+    width: 90px; /* Smaller image size */
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff; /* Blue border around image */
+}
+
+/* Reduce the size of titles for a compact look */
+.info-text h4 {
+    font-size: 1rem; /* Smaller title font */
+}
+
+.info-text h5 {
+    font-size: 0.875rem; /* Smaller subtitle font */
+}
+
+/* Hover effect to slightly elevate the card */
+.team-member:hover {
+    transform: translateY(-5px); /* Elevate on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Reduce social link icon size */
+.social-links a {
+    font-size: 1.2rem; /* Smaller icons */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 1rem); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%; /* One item per row on small screens */
+    }
+}

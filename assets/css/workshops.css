@@ -1,0 +1,233 @@
+/* Define the font face */
+@font-face {
+    font-family: 'Product Sans';
+    src: url('assets/fonts/Product Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+/* Full-page video background */
+#pricing #bg-video {
+    position: fixed; /* Fix the video in the viewport */
+    top: 0;
+    left: 0;
+    width: 200vw; /* Full viewport width */
+    height: 200vh; /* Full viewport height */
+
+    object-fit: cover; /* Scale the video to cover the entire area without distortion */
+    z-index: -1; /* Place the video behind the content */
+    opacity: 1; /* Adjust opacity if needed */
+    background-color: rgba(18, 18, 18, 0.5); /* Optional: fallback color */
+}
+
+/* Ensure your content is on top of the video */
+#pricing {
+    position: relative;
+    z-index: 1;
+    padding: 10px 0; /* Adjust padding as needed */
+    min-height: 100vh; /* Ensure the section covers the full height of the viewport */
+}
+
+/* Additional styling for better content visibility */
+#pricing .container {
+    position: relative;
+    z-index: 1;
+    color: #ffffff; /* Adjust text color for readability */
+    text-align: center;
+}
+
+
+
+
+#pricing .row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ensure columns are aligned properly */
+    color: #f5e9e9;
+
+}
+
+.section-title {
+font-size: 30px;
+    color: #f3eded;
+    line-height: 52px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Product Sans', sans-serif;
+
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#pricing .col-lg-3,
+#pricing .col-md-6,
+#pricing .col-xs-12 {
+    display: flex;
+    justify-content: center;
+    padding: 10px; /* Adjust padding to control spacing between columns */
+    flex: 0 0 25%; /* Adjust to desired width for large screens */
+    max-width: 100%;
+    font-family: 'Product Sans', sans-serif;
+
+}
+
+
+.colmun-title h6 {
+    color: #000000; /* Set text color to black */
+    font-weight: bold; /* Ensure text is bold */
+    font-family: 'Product Sans', sans-serif;
+
+}
+
+
+#pricing .price-block-wrapper {
+    display: flex;
+    flex-direction: column; /* Ensure content is arranged in a column */
+    align-items: center; /* Center content horizontally */
+    width: 100%; /* Full width to maintain consistency */
+    max-width: 400px; /* Increase this value for a wider wrapper */
+    text-align: center;
+    box-shadow: 0 8px 24px #1d5bb1;
+    border-radius: 4px;
+    background: #ffffff;
+    padding: 50px 40px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+#pricing .price-block-wrapper .icon {
+    padding: 20px;
+}
+
+#pricing .price-block-wrapper .icon i {
+    font-size: 60px;
+    color: #1d5bb1;
+}
+
+#pricing .price-block-wrapper .colmun-title h5 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#pricing .price-block-wrapper .price {
+    padding-top: 10px;
+    transition: all 500ms ease;
+}
+
+#pricing .price-block-wrapper .price h2 {
+    font-size: 38px;
+    background-image: linear-gradient(65deg, #1d5bb1 0, #1d5bb1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 42px;
+    margin-bottom: 7px;
+}
+
+#pricing .price-block-wrapper .price span {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#pricing .price-block-wrapper .price p {
+    font-size: 15px;
+    color: #5c5c5c;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    transition: all 500ms ease;
+}
+
+#pricing .price-block-wrapper .pricing-list {
+    padding: 15px 0;
+}
+
+#pricing .price-block-wrapper .pricing-list ul {
+    padding-bottom: 15px;
+}
+
+#pricing .price-block-wrapper .pricing-list ul li {
+    position: relative;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 2px 0px;
+}
+
+#pricing .price-block-wrapper .pricing-list ul li i {
+    margin-right: 7px;
+    font-size: 12px;
+    color: #1d5bb1;
+}
+
+#pricing .price-block-wrapper .btn i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+#pricing .price-block-wrapper:hover {
+    box-shadow: 0 16px 48px #1d5bb1;
+}
+
+#pricing .active {
+    background-image: linear-gradient(65deg, #ffffff 0, #ffffff 100%);
+    box-shadow: 0 16px 48px #1d5bb1;
+}
+
+#pricing .active .icon i {
+    color: #1d5bb1;
+}
+
+#pricing .active .colmun-title h5 {
+    color: #171616;
+}
+
+#pricing .active .price h2 {
+    background-image: linear-gradient(120deg, #1d5bb1 0%, #1d5bb1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#pricing .active .price span {
+    color: #080606;
+}
+
+#pricing .active .price p {
+    color: #0b0b0b;
+}
+
+#pricing .active .pricing-list ul li {
+    color: #080808;
+}
+
+#pricing .active .pricing-list ul li i {
+    color: #2210a5;
+}
+
+#pricing .active .btn {
+    background: #1d5bb1;
+    color: #f8f8f8;
+}
+
+.btn-common {
+    background-color: #f76c6c; /* Customize background color */
+    color: #fff; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Spacing */
+    text-align: center; /* Center text */
+    display: inline-block; /* Inline-block to adjust size */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.btn-common:hover {
+    background-color: #ff5e5e; /* Darker shade on hover */
+}

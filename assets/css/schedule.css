@@ -1,0 +1,181 @@
+/* Define the font face */
+@font-face {
+    font-family: 'Product Sans';
+    src: url('assets/fonts/Product Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Product Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    color: #2c3e50;
+}
+
+video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Single-column schedule layout with a fancy styling */
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.schedule-item {
+    background: linear-gradient(135deg, #0f1342 0%, #869be8 100%);
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeIn 1s ease both;
+}
+
+.schedule-item::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: scale(1.2);
+    animation: spin 10s linear infinite;
+}
+
+.schedule-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-item h2 {
+    font-size: 1.7em;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.schedule-item h2::before {
+    content: "📅";
+    margin-right: 8px;
+    animation: bounce 1.5s infinite;
+}
+
+.schedule-item p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+.schedule-item strong {
+    color: #0e0d0d;
+    font-weight: bold;
+}
+
+.schedule-item .desc {
+    font-size: 1em;
+    color: #fdfdfd;
+    opacity: 0.85;
+    margin-top: 10px;
+}
+
+/* Fancy animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .schedule-item h2 {
+        font-size: 1.5em;
+    }
+
+    .schedule-item p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.7em;
+    }
+
+    .schedule-item h2 {
+        font-size: 1.3em;
+    }
+
+    .schedule-item p {
+        font-size: 0.9em;
+    }
+}
