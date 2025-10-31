@@ -27,95 +27,171 @@
         <source src="assets/img/file.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <div class="container">
-        <h1>Agenda</h1>
+
+
+<div class="container">
+    <h1>DevFest Kosova 2025 Agenda</h1>
+
+    <!-- Tabs -->
+    <div class="agenda-buttons">
+        <button class="tab-btn active" data-target="day1">Day 1</button>
+        <button class="tab-btn" data-target="day2">Day 2</button>
+        <button class="tab-btn" data-target="workshops">Workshops</button>
+    </div>
+
+    <!-- Day 1 -->
+    <div class="schedule-tab active" id="day1">
         <div class="schedule">
             <div class="schedule-item">
-                <h2>9:00 AM</h2>
-                <p><strong>Registration and drinks </strong></p>
-               
+                <h2>14:00 - 15:00</h2>
+                <p>Registration & Networking</p>
             </div>
             <div class="schedule-item">
-                <h2>10:00 AM</h2>
-                <p><strong>Opening Remarks</strong></p>
-                <p>Eric Guetschoff, Private Enterprise Officer, USAID Kosovo
-                & Isak Shabani, Dean of FIEK, University of Prishtina  </p>
+                <h2>15:00 - 15:15</h2>
+                <p>Welcome & Opening Remarks</p>
             </div>
             <div class="schedule-item">
-                <h2>10:20 AM</h2>
-                <p><strong>Benjamin Richter</strong></p>
-                <p>Topic: Web3 at Google: Tools & Tips for Building dApps on Google Cloud</p>
+                <h2>15:15 - 15:50</h2>
+                <p><strong>Keynote 1:</strong> Building Reliable ML Infrastructure at Scale</p>
+                <p>Kyle Bringmans, Software Engineer III (L4) at Google</p>
             </div>
             <div class="schedule-item">
-                <h2>11:10 AM</h2>
-                <p><strong>Josefine Schaefer</strong></p>
-                <p>Topic: Accessibility Testing with Chrome DevTools</p>
+                <h2>15:50 - 16:25</h2>
+                <p><strong>Keynote 2:</strong> AI in SOC design and functional safety domain</p>
+                <p>Waqas S Jutt, Global Lead SOC Architect (AI/ML, SOC & Functional Safety) at Intel</p>
             </div>
             <div class="schedule-item">
-                <h2>11:40 AM</h2>
-                <p><strong>Short Break</strong></p>
-                <p>Use this time to get some coffee/drinks/snacks - 15 min</p>
+                <h2>16:25 - 16:45</h2>
+                <p>☕ Coffee Break / Networking</p>
             </div>
             <div class="schedule-item">
-                <h2>12:00 PM</h2>
-                <p><strong>AI Panel Talk</strong></p>
-                <p>Jasper Duizendstra, Gentrit Gojani, Robert Shala, Bleron Limani</p>
+                <h2>16:45 - 17:20</h2>
+                <p><strong>Talk:</strong> FinOps: A New Hope</p>
+                <p>Seifeddîn MANSRI, Cloud CTO at SFEIR</p>
+                <p><strong>Parallel Workshop:</strong> Beyond the Prompt – AI-Powered Game (1-2h)</p>
+                <p>Yoyú Li, Creative Technology Director at Infinite Whys Ltd</p>
             </div>
             <div class="schedule-item">
-                <h2>1:00 PM</h2>
-                <p><strong>Lunch Time</strong></p>
-                <p>50 min Lunch break</p>
+                <h2>17:20 - 17:40</h2>
+                <p>☕ Coffee Break / Networking</p>
             </div>
             <div class="schedule-item">
-                <h2>1:50 PM</h2>
-                <p><strong>Jonas Tillström</strong></p>
-                <p>Topic: Predicting maintenance plans using AI and data from connected products</p>
+                <h2>17:40 - 18:40</h2>
+                <p><strong>Panel Discussion:</strong> TBD</p>
+                <p>Speakers: Sasha Denisov</p>
             </div>
             <div class="schedule-item">
-                <h2>2:30 PM</h2>
-                <p><strong>Lukas Klingsbo</strong></p>
-                <p>Topic: Introduction to Building Games with Flutter & Flame</p>
-            </div>
-            <div class="schedule-item">
-                <h2>2:55 PM</h2>
-                <p><strong>Short Break</strong></p>
-                <p>Use this time to get some coffee/drinks/snacks - 15 min</p>
-            </div>
-            <div class="schedule-item">
-                <h2>3:10 PM</h2>
-                <p><strong>Panel Talk - Leadership</strong></p>
-                <p>Rodolfo Dias, Blendrit Elezaj, </p>
-            </div>
-            <div class="schedule-item">
-                <h2>3:55 PM</h2>
-                <p><strong>Short Break</strong></p>
-                <p>Use this time to get some coffee/drinks/snacks - 15 min</p>
-            </div>
-            <div class="schedule-item">
-                <h2>4:10 PM</h2>
-                <p><strong>Ankur Roy</strong></p>
-                <p>Topic: Practical BigQuery integration with Google Workspace</p>
-            </div>
-            <div class="schedule-item">
-                <h2>4:45 PM</h2>
-                <p><strong>Enea Jahollari</strong></p>
-                <p>Topic: What's new in Angular</p>
-            </div>
-           
-             <div class="schedule-item">
-                <h2>5:25 PM</h2>
-                <p><strong>Closing Remarks</strong></p>
-                <p>10 min</p>
-            </div>
-            <div class="schedule-item">
-                <h2>20:00 PM</h2>
-                <p><strong>After Party</strong></p>
-                <p>At Soma Book Station from 20:00 - 22:00</p>
-            </div>
-            <div class="schedule-item">
-                <p><strong>IMPORTANT:</strong> Workshops will be available all day (limited capacity).</p>
+                <h2>18:40 - 19:30</h2>
+                <p>🍕 Networking & Food / Wrap-Up</p>
             </div>
         </div>
+    </div>
+
+    <!-- Day 2 Main Track -->
+    <div class="schedule-tab" id="day2">
+        <div class="schedule">
+            <div class="schedule-item">
+                <h2>09:00 - 10:00</h2>
+                <p>Registration & Networking</p>
+            </div>
+            <div class="schedule-item">
+                <h2>10:00 - 10:15</h2>
+                <p>Welcome & Opening Remarks</p>
+            </div>
+            <div class="schedule-item">
+                <h2>10:15 - 11:50</h2>
+                <p><strong>Keynote 1:</strong> Web Fragments – Open Source Micro-Frontends</p>
+                <p>Igor Minar, Senior Director Cloudflare</p>
+                <p>Natalia Venditto, Principal Product Manager at Microsoft</p>
+            </div>
+            <div class="schedule-item">
+                <h2>11:50 - 12:25</h2>
+                <p><strong>Talk:</strong> Scaling Inference to Billions of Users and Agents</p>
+                <p>Federico Iezzi, Customer Engineer at Google</p>
+            </div>
+            <div class="schedule-item">
+                <h2>12:30 - 13:30</h2>
+                <p>🍔 Lunch Break / Networking</p>
+            </div>
+            <div class="schedule-item">
+                <h2>13:30 - 14:30</h2>
+                <p><strong>Parallel Talk:</strong> Beyond Coding – 10 Lessons You Won't Learn in School</p>
+                <p>Dajana Stojchevski, Software Engineer at Google</p>
+                <p><strong>Parallel Talk:</strong> Nvidia Human–Machine Interaction</p>
+                <p>Gentrit Fazlija, Co-Founder & CTO at AI Strategy Institute</p>
+            </div>
+            <div class="schedule-item">
+                <h2>14:30 - 14:50</h2>
+                <p>☕ Coffee Break / Networking</p>
+            </div>
+            <div class="schedule-item">
+                <h2>14:50 - 15:25</h2>
+                <p><strong>Parallel Talk:</strong> Privacy enhancing technologies</p>
+                <p>Miraç Vuslat Başaran, Senior Software Engineer at Google</p>
+                <p><strong>Parallel Talk:</strong> Building Intelligent Agents: AI Architectures & Vertex AI</p>
+                <p>Enes Turan, Platform Engineer at IBM</p>
+            </div>
+            <div class="schedule-item">
+                <h2>15:25 - 15:40</h2>
+                <p>☕ Coffee Break / Networking</p>
+            </div>
+            <div class="schedule-item">
+                <h2>15:40 - 16:40</h2>
+                <p><strong>Panel Talk:</strong> TBD</p>
+                <p>Internship Opportunities at Intel</p>
+                <p>Waqas S Jutt, Global Lead SOC Architect (AI/ML, SOC & Functional Safety) at Intel</p>
+            </div>
+            <div class="schedule-item">
+                <h2>16:40 - 17:30</h2>
+                <p>🍕 Networking & Food / Wrap-Up</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 2 Workshops -->
+    <div class="schedule-tab" id="workshops">
+        <div class="schedule">
+            <div class="schedule-item">
+                <h2>09:00 - 10:00</h2>
+                <p>Registration & Networking</p>
+            </div>
+            <div class="schedule-item">
+                <h2>10:00 - 11:30</h2>
+                <p><strong>Workshop 1:</strong> Wasabi Workshop</p>
+                <p>Wasabi Team</p>
+            </div>
+            <div class="schedule-item">
+                <h2>11:00 - 12:30</h2>
+                <p><strong>Workshop 2:</strong> Frontend Efficiency & Scaling Teams</p>
+                <p>Bilal Çinarlı, Principal Software Engineer at Atlassian</p>
+                <p><strong>Workshop 3:</strong> DevOps Wasabi Workshop</p>
+                <p>Wasabi Team</p>
+            </div>
+            <div class="schedule-item">
+                <h2>12:30 - 13:30</h2>
+                <p>🍔 Lunch Break / Networking</p>
+            </div>
+            <div class="schedule-item">
+                <h2>13:30 - 15:00</h2>
+                <p><strong>Workshop 4:</strong> AI Meets Chrome – DevTools MCP</p>
+                <p>Adrian Romański, Full stack Developer at PushBased</p>
+            </div>
+            <div class="schedule-item">
+                <h2>14:30 - 16:00</h2>
+                <p><strong>Workshop 5:</strong> NVidia Workshop</p>
+                <p>Gentrit Fazlija, Co-Founder & CTO at AI Strategy Institute</p>
+                <p><strong>Workshop 6:</strong> Wasabi Workshop</p>
+                <p>Wasabi Team</p>
+            </div>
+            <div class="schedule-item">
+                <h2>16:40 - 17:30</h2>
+                <p>🍕 Networking & Food / Wrap-Up</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
     </div>
     
 

@@ -1251,24 +1251,26 @@ h1 {
 /* Golden Sponsors Button */
 #sponsors .golden-sponsor .read-more-button {
   background-color: #ffcc00; /* Gold color for the button */
-  color: #333; /* Dark text color for contrast */
+  color: #ae9c9c; /* Dark text color for contrast */
   border: none; /* Remove border for a cleaner look */
   padding: 6px 20px; /* Reduce the vertical padding for a shorter height */
-  font-size: 16px; /* Slightly smaller font size */
-  border-radius: 30px; /* Rounded corners */
-  margin-top: 15px; /* Spacing above the button */
+  font-size: 10px; /* Slightly smaller font size */
+  border-radius: 50px; /* Rounded corners */
+  margin-top: 25px; /* Spacing above the button */
   text-decoration: none; /* Remove underline */
-  display: inline-flex; /* Use inline-flex for better centering */
+  display: flex; /* Enables flexbox layout */
   justify-content: center; /* Center text horizontally */
-  align-items: center; /* Ensure text is vertically centered */
-  width: auto; /* Button width should adjust based on content */
-  min-width: 130px; /* Minimum width for button */
-  max-width: 200px; /* Maximum width for button */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
-  text-align: center; /* Center text */
-  line-height: normal; /* Adjust line-height to fit text inside the button */
+  align-items: center; /* Vertically center text */
+  width: auto; /* Button width adjusts based on content */
+  min-width: 130px; /* Minimum width */
+  max-width: 200px; /* Maximum width */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  text-align: center; /* Ensure multiline text is centered */
+  line-height: normal; /* Adjust line-height to fit text */
+  cursor: pointer; /* Optional: make it look clickable */
 }
 
+/* Hover state */
 #sponsors .golden-sponsor .read-more-button:hover {
   background-color: #e6b800; /* Darken gold when hovered */
   transform: translateY(-2px); /* Lift effect on hover */
@@ -1396,8 +1398,8 @@ h1 {
 
 #sponsors1 .read-more-button {
   display: inline-block !important;
-  width: 80px !important;
-  height: 30px !important;
+  width: 50px !important;
+  height: 50px !important;
   background-color: #007bff !important;
   color: #fff !important;
   text-align: center !important;
@@ -1421,6 +1423,24 @@ h1 {
   color: #333; /* Darker text color */
   margin-bottom: 20px;
 }
+
+#sponsors .golden-sponsor .read-more-button {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: auto !important;
+  min-width: 130px !important;
+  max-width: 200px !important;
+  line-height: normal !important;
+  background-color: #007bff !important;
+  color: white !important;
+  border-radius: 1px !important;
+  padding: 6px 20px !important;
+  font-size: 15px !important;
+  margin-top: 10px !important;
+}
+
 
 
 
