@@ -84,18 +84,11 @@ font-size: 30px;
 
 #pricing .price-block-wrapper {
     display: flex;
-    flex-direction: column; /* Ensure content is arranged in a column */
-    align-items: center; /* Center content horizontally */
-    width: 100%; /* Full width to maintain consistency */
-    max-width: 400px; /* Increase this value for a wider wrapper */
-    text-align: center;
-    box-shadow: 0 8px 24px #1d5bb1;
-    border-radius: 4px;
-    background: #ffffff;
-    padding: 50px 40px;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    flex-direction: column;
+    justify-content: space-between; /* Push button to bottom */
+    align-items: center;
+    height: 100%;                  /* Equal card height */
+    box-sizing: border-box;   
 }
 
 #pricing .price-block-wrapper .icon {
@@ -146,8 +139,14 @@ font-size: 30px;
 }
 
 #pricing .price-block-wrapper .pricing-list {
-    padding: 15px 0;
+  
+    flex-grow: 1;                 /* Make list expand to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      /* Center list vertically */
+    align-items: center;          /* Center list horizontally */
 }
+
 
 #pricing .price-block-wrapper .pricing-list ul {
     padding-bottom: 15px;
@@ -230,4 +229,21 @@ font-size: 30px;
 
 .btn-common:hover {
     background-color: #ff5e5e; /* Darker shade on hover */
+}
+
+.workshop-title {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    width: 100%;            /* Full width of card */
+    min-height: 50px;        /* Adjust this based on max title length */
+    display: flex;
+    align-items: center;     /* Vertically center text inside title frame */
+    justify-content: center; /* Horizontally center text */
+    box-sizing: border-box;
 }
