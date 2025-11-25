@@ -3033,3 +3033,75 @@ footer {
     padding: 60px 10px 80px;
   }
 }
+
+
+
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 768px) {
+
+  /* Make rows stack and center */
+  #sponsors .sponsors-logo,
+  #sponsors1 .sponsors-logo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Each sponsor takes ~45% width on tablet */
+  #sponsors .sponsor-item,
+  #sponsors1 .sponsor-item {
+    flex: 1 0 45%;
+    max-width: 45%;
+  }
+
+  /* Images shrink on smaller screens */
+  #sponsors .sponsor-item a,
+  #sponsors1 .sponsor-item a {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Text smaller */
+  #sponsors .sponsor-name,
+  #sponsors1 .sponsor-name {
+    font-size: 12px;
+  }
+
+  /* Buttons scale down */
+  #sponsors .read-more-button,
+  #sponsors1 .read-more-button {
+    min-width: 100px !important;
+    font-size: 12px !important;
+    padding: 5px 12px !important;
+  }
+
+  /* Golden & Platinum cards take full width */
+  #sponsors .golden-sponsor,
+  #sponsors .platinum-sponsor {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* ----- Extra small screens (phones) ----- */
+@media (max-width: 480px) {
+
+  /* Each logo item becomes full width */
+  #sponsors .sponsor-item,
+  #sponsors1 .sponsor-item {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  #sponsors .sponsor-item a,
+  #sponsors1 .sponsor-item a {
+    width: 100px;
+    height: 100px;
+  }
+
+  #sponsors .sponsor-name,
+  #sponsors1 .sponsor-name {
+    font-size: 11px;
+  }
+}
