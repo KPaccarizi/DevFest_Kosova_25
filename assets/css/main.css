@@ -1310,8 +1310,8 @@ h1 {
 /* Sponsor Item Styles */
 #sponsors .sponsor-item a {
   display: flex; /* Ensure the container is flex to center the image */
-  align-items: center; /* Center the image vertically */
-  justify-content: center; /* Center the image horizontally */
+  justify-content: center !important; 
+  align-items: center !important;
   height: 150px; /* Fixed height for the logo container */
   width: 150px; /* Fixed width for the logo container */
   border-radius: 50%; /* Make the container circular */
@@ -1346,21 +1346,25 @@ h1 {
   border-radius: 0 !important;
   margin: 10px 0 !important;
   font-size: 12px !important;
+  justify-content: center !important; 
+  align-items: center !important;
 }
 
 /* Sponsors Area */
 #sponsors1 {
   background: none; /* Remove background */
   padding: 20px; /* Optional: Add padding for spacing */
+  justify-content: center !important; 
+  align-items: center !important;
 }
 
 /* Sponsors Logos */
 #sponsors1 .sponsors-logo {
   display: flex; /* Use Flexbox for row layout */
-  justify-content: space-between; /* Distribute logos evenly */
-  align-items: center; /* Align logos vertically */
   gap: 20px; /* Space between logos */
   flex-wrap: nowrap; /* Prevent items from wrapping */
+  justify-content: center !important; 
+  align-items: center !important;
 }
 
 /* Sponsor Item Styles */
@@ -1369,12 +1373,14 @@ h1 {
   width: 18%; /* Set each sponsor item to take 18% of the row width */
   margin: 10px 0; /* Optional: Add margin for spacing */
   text-align: center; /* Center text */
+  justify-content: center !important; 
+  align-items: center !important;
 }
 
 #sponsors1 .sponsor-item a {
   display: flex;
-  justify-content: center; /* Center image horizontally */
-  align-items: center; /* Center image vertically */
+  justify-content: center !important; 
+  align-items: center !important;
   height: 100px; /* Fixed height for logos */
   width: 100px; /* Fixed width for logos */
   border-radius: 50%; /* Make the container circular */
@@ -1441,6 +1447,78 @@ h1 {
   margin-top: 10px !important;
 }
 
+
+/* ---- Platinum Sponsor (correct platinum color + centered) ---- */
+#sponsors .platinum-sponsor {
+  background: linear-gradient(145deg, #f7f7f7, #d9d9d9, #bfbfbf); /* Platinum gradient */
+  border: 1px solid #cfcfcf; 
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  /* Center the card */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#sponsors .platinum-sponsor:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#sponsors .platinum-sponsor .sponsor-name {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+#sponsors .platinum-sponsor .read-more-button {
+background-color: #dcdcdc; /* Platinum/silver color */
+  color: #ffffff !important; 
+  border: none!important;
+  padding: 6px 20px !important; 
+  font-size: 15px !important;
+  border-radius: 1px !important; 
+  margin-top: 25px !important;
+  text-decoration: none !important;
+  display: flex !important; 
+  justify-content: center !important; 
+  align-items: center !important; 
+  width: auto !important; 
+  min-width: 130px !important; 
+  max-width: 200px !important; 
+  transition: background-color 0.3s ease, transform 0.3s ease !important; 
+  text-align: center !important; 
+  line-height: normal !important; 
+  cursor: pointer !important;
+}
+
+#sponsors .platinum-sponsor .read-more-button:hover {
+  background-color: #c0c0c0;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+#sponsors .platinum-sponsor {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* ---- Ensure all sponsor sections stay centered ---- */
+.sponsors-logo {
+  display: flex;
+  justify-content: center;  /* FULL CENTER */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
 
 
 
