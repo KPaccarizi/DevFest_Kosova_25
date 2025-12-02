@@ -1218,18 +1218,23 @@ h1 {
   align-items: center; /* Center children horizontally */
 }
 /* Golden Sponsors */
+/* Golden Sponsors */
 #sponsors .golden-sponsor {
-  background: linear-gradient(145deg, #ffcc00, #ff9900); /* Gradient background for golden effect */
-  border: 1px solid #f5c000; /* Gold border for emphasis */
-  border-radius: 15px; /* Rounded corners for a smoother, modern look */
-  padding: 10px; /* Added padding for spacing inside */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for a floating effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
-  display: flex; /* Flexbox for positioning inside */
-  flex-direction: column; /* Ensure content inside is stacked vertically */
-  align-items: center; /* Center the content horizontally */
-  justify-content: center; /* Vertically center content */
-  text-align: center; /* Ensure text is centered */
+  background: linear-gradient(145deg, #ffcc00, #ff9900);
+  border: 1px solid #f5c000;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  /* 🔥 Center the element itself */
+  margin: 0 auto;
+  width: fit-content; /* optional: shrink to content */
 }
 
 /* Hover effect for Golden Sponsors */
