@@ -1205,7 +1205,9 @@ h1 {
 #sponsors .sponsors-logo {
   display: flex; /* Use Flexbox for row layout */
   flex-wrap: wrap; /* Allow wrapping if needed */
-  justify-content: space-between; /* Distribute logos evenly */
+ 
+   justify-content: center;
+   align-items: center;
 }
 
 #sponsors .sponsor-item {
@@ -1215,6 +1217,7 @@ h1 {
   text-align: center !important; /* Center text */
   display: flex; /* Use flexbox for vertical centering */
   flex-direction: column; /* Align children vertically */
+  justify-content: center;
   align-items: center; /* Center children horizontally */
 }
 /* Golden Sponsors */
